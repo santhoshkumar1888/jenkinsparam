@@ -40,5 +40,11 @@
     <artifactId>selenium-java</artifactId>
     <version>LATEST</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>LATEST</version>
+</dependency>
   	</dependencies>
 </project>
