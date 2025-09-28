@@ -5,16 +5,21 @@
       <![CDATA[Testamethod]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-09-20T15:26:41 IST" name="Suite" finished-at="2025-09-20T15:26:54 IST" duration-ms="12401">
+  <suite started-at="2025-09-28T11:45:33 IST" name="Default suite" finished-at="2025-09-28T11:45:49 IST" duration-ms="15543">
     <groups>
     </groups>
-    <test started-at="2025-09-20T15:26:41 IST" name="Test" finished-at="2025-09-20T15:26:54 IST" duration-ms="12401">
+    <test started-at="2025-09-28T11:45:33 IST" name="Default test" finished-at="2025-09-28T11:45:49 IST" duration-ms="15543">
       <class name="day1.Demo1">
-        <test-method signature="testa(java.lang.String)[pri:0, instance:day1.Demo1@62ddbd7e]" started-at="2025-09-20T15:26:41 IST" name="testa" finished-at="2025-09-20T15:26:54 IST" duration-ms="12313" status="PASS">
+        <test-method signature="testa(java.lang.String,java.lang.String)[pri:0, instance:day1.Demo1@1fa121e2]" started-at="2025-09-28T11:45:33 IST" name="testa" finished-at="2025-09-28T11:45:49 IST" duration-ms="15463" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[http://localhost:4444]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://facebook.com]]>
               </value>
             </param>
           </params>
@@ -25,6 +30,6 @@
           </reporter-output>
         </test-method> <!-- testa -->
       </class> <!-- day1.Demo1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

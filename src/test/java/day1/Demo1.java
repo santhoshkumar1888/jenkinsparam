@@ -13,12 +13,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Demo1 {
-	@Parameters({"gridURL"})
+	@Parameters({"gridURL","appURL"})
 	@Test
-	public void testa(String gridURL) throws InterruptedException, MalformedURLException {
+	public void testa(String gridURL, String appURL) throws InterruptedException, MalformedURLException {
 		Reporter.log("Testamethod",true);
 		WebDriver driver=new RemoteWebDriver(new URL(gridURL),new ChromeOptions());
-		driver.get("https://facebook.com");
+		driver.get(appURL);
 		System.out.println(driver.getTitle());
 		driver.findElement(By.id("email")).sendKeys("9740971888");
 		driver.findElement(By.id("pass")).sendKeys("santhosh8");

@@ -11,7 +11,9 @@
 	        <version>3.5.4</version>
 	        <configuration>
 	        <systemPropertyVariables>
-                    <gridURL>http://localhost:4444</gridURL>
+                    <!--<gridURL>http://localhost:4444</gridURL> -->
+                   <gridURL>http://localhost:4444</gridURL>
+                 <appURL>https://facebook.com</appURL>
                 </systemPropertyVariables>
 	          <suiteXmlFiles>
 	            <suiteXmlFile>testng.xml</suiteXmlFile>
