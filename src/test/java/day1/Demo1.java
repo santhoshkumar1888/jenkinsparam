@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -21,9 +20,9 @@ public class Demo1 {
 	@Test
 	public void testa(String gridURL, String appURL) throws InterruptedException, MalformedURLException {
 		ExtentReports report=new ExtentReports();
-		ExtentSparkReporter spark=new ExtentSparkReporter("report/SparkTest.html");
+		ExtentSparkReporter spark=new ExtentSparkReporter("./report/Spark.html");
 		report.attachReporter(spark);
-		ExtentTest extest=report.createTest("To Login facebook");
+		ExtentTest extest=report.createTest("TestA");
 		extest.info("Facebook logining");
 		WebDriver driver=new RemoteWebDriver(new URL(gridURL),new ChromeOptions());
 		driver.get(appURL);
@@ -34,6 +33,7 @@ public class Demo1 {
 		Thread.sleep(7000);
 		extest.info(driver.getTitle());
 		driver.close();
+		report.flush();
 		
 	}
 
